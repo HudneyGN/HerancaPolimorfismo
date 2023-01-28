@@ -23,7 +23,7 @@ namespace Course {
                 Console.Write("Value per hour: ");
                 double valuePerHour = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-                if (resp == 'y' ) {
+                if (resp == 'y' || resp == 'Y') {
                     Console.Write("Additional charge: ");
                     double additionalCharge = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                     employees.Add(new OutSourcedEmployee(name, hours, valuePerHour, additionalCharge));
